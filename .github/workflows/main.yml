@@ -1,20 +1,20 @@
-name: First Workflow
+# name: First Workflow
 
-on:
-  push:
-    branches:  
-      - main
-jobs:
-  example-jo:
-    runs-on: ubuntu-latest
+# on:
+#   push:
+#     branches:  
+#       - main
+# jobs:
+#   example-jo:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: print hello messsage
-        run: echo "welcome to our first Github actions workflow"
-      - name: check out repo
-        uses : actions/checkout@v5.0.0
+#     steps:
+#       - name: print hello messsage
+#         run: echo "welcome to our first Github actions workflow"
+#       - name: check out repo
+#         uses : actions/checkout@v5.0.0
 
-      - name: List repo files
-        run: ls -al
+#       - name: List repo files
+#         run: ls -al
       
       
