@@ -1,0 +1,20 @@
+{
+  "name": "string-length-checker",
+  "version": "1.0.0",
+  "description": "A simple utility to check if a string's length is within bounds",
+  "main": "stringLengthChecker.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node exampleUsage.js"
+  },
+  "keywords": [
+    "string",
+    "length",
+    "validation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
