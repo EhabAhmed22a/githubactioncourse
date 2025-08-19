@@ -1,20 +1,11 @@
 name: Deployment Workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      env:
-        description: "Choose the environment"
-        required: true
-        type: choice
-        default: staging
-        options:
-          - staging
-          - production
-
-jobs:
-  deploy:
+  repository_dispatch:
+    types: [incident_report]
+jobs: 
+  handle_incident:
     runs-on: ubuntu-latest
     steps:
-      - name: Print message of deploy
-        run: echo "The system is deployed to ${{ github.event.inputs.env }}"
+      - name: print inicdent details
+        run: echo "Incieent reported"
