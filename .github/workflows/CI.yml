@@ -6,3 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying to production server on branch $GITHUB_REF"
+  another_Job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello Ehab"
