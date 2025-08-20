@@ -1,5 +1,9 @@
 name: CI
-on: push # Trigger on ANY push to ANY branch
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   prod-check:
     if: ${{ github.ref == 'refs/heads/main' }} # BUT only run this job if push was to main
