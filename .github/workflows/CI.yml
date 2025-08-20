@@ -1,0 +1,8 @@
+name: CI
+on: push # Trigger on ANY push to ANY branch
+jobs:
+  prod-check:
+    if: ${{ github.ref == 'refs/heads/main' }} # BUT only run this job if push was to main
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to production server on branch $GITHUB_REF"
