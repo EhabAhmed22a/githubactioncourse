@@ -1,0 +1,11 @@
+name: test event trigger filtering
+on: 
+  pull_request:
+    branches: [main]
+    paths:
+       - 'src/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+       - run: echo "pull_request paths is event trigger"
